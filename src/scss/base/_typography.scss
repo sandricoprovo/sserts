@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap");
+
+$header1: 90.44px;
+$header2: 63.96px;
+$header3: 45.23px;
+$header4: 31.99px;
+$header5: 22.62px;
+$header6: 16px;
+$paragraph: 16px;
+$small-paragraph: 11.32px;
+$overline: 8px;
+
+.header1 {
+  font-size: $header1;
+  font-family: "Pacifico";
+}
+
+.header2 {
+  font-size: $header2;
+  font-family: "Pacifico";
+}
+
+.header3 {
+  font-size: $header3;
+  font-family: "Pacifico";
+}
+
+.header4 {
+  font-size: $header4;
+  font-family: "Pacifico";
+}
+
+.header5 {
+  font-size: $header5;
+  font-family: "Pacifico";
+}
+
+.header6 {
+  font-size: $header6;
+  font-family: "Pacifico";
+}
+
+.paragraph {
+  font-size: $paragraph;
+  font-family: "Pacifico";
+}
+
+.small-paragraph {
+  font-size: $small-paragraph;
+  font-family: "Pacifico";
+}
+
+.overline {
+  font-size: $overline;
+  font-family: "Pacifico";
+}

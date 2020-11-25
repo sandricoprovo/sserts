@@ -437,6 +437,12 @@ template {
   margin: 0 16px;
 }
 
+.nav__link {
+  border-bottom: 2px solid;
+  border-image-source: var(--brand-gradient-40);
+  border-image-slice: 1;
+}
+
 .footer__container {
   background-color: var(--black);
   color: var(--brand-color-1);

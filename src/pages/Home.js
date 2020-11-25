@@ -20,9 +20,7 @@ const Home = () => (
     <main className="content__wrapper">
       <section className="content__header">
         <h1 className="header2">The Gallery</h1>
-        <p className="paragraph">
-          Our eight most popular desserts as of Wednesday, November 18, 2020
-        </p>
+        <p className="paragraph">Our eight most popular desserts.</p>
       </section>
       <section className="content__desserts">
         <DessertCard

@@ -1,10 +1,15 @@
 .dessert__container {
   margin-top: 24px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.dessert__container:hover {
   box-shadow: $dessert-shadow;
+  transform: scale(1.05);
 }
 
 .dessert__img {
@@ -22,4 +27,32 @@
   border: 5px solid;
   border-image-source: $brand-gradient-40;
   border-image-slice: 1;
+}
+
+.dessert__title {
+  position: relative;
+  z-index: 100;
+}
+
+.dessert__title span {
+  position: relative;
+  z-index: -1;
+}
+
+.dessert__title::after {
+  content: "";
+  position: absolute;
+  left: -0.1px;
+  right: -0.1px;
+  bottom: 0;
+  height: 100%;
+  z-index: -1;
+  transform: scaleY(0.3);
+  transition: transform 0.1s ease-in-out;
+  transform-origin: bottom;
+  background-image: $brand-gradient-40;
+}
+
+.dessert__title:hover::after {
+  transform: scaleY(1);
 }

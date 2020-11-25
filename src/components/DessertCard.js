@@ -5,7 +5,9 @@ const DessertCard = ({ imgName, name, cost, quantity }) => (
   <div className="dessert__container">
     <img className="dessert__img" src={imgName} alt="" />
     <div className="dessert__info">
-      <h1 className="header5 dessert__title">{name}</h1>
+      <h1 className="header5 dessert__title">
+        {name} <span />
+      </h1>
       <p className="dessert__cost paragraph">{`$${cost} / ${quantity}`}</p>
     </div>
   </div>

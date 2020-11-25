@@ -30953,7 +30953,7 @@ var DessertCard = function DessertCard(_ref) {
     className: "dessert__info"
   }, /*#__PURE__*/_react.default.createElement("h1", {
     className: "header5 dessert__title"
-  }, name), /*#__PURE__*/_react.default.createElement("p", {
+  }, name, " ", /*#__PURE__*/_react.default.createElement("span", null)), /*#__PURE__*/_react.default.createElement("p", {
     className: "dessert__cost paragraph"
   }, "$".concat(cost, " / ").concat(quantity))));
 };
@@ -31025,7 +31025,7 @@ var Home = function Home() {
     className: "header2"
   }, "The Gallery"), /*#__PURE__*/_react.default.createElement("p", {
     className: "paragraph"
-  }, "Our eight most popular desserts as of Wednesday, November 18, 2020")), /*#__PURE__*/_react.default.createElement("section", {
+  }, "Our eight most popular desserts.")), /*#__PURE__*/_react.default.createElement("section", {
     className: "content__desserts"
   }, /*#__PURE__*/_react.default.createElement(_DessertCard.default, {
     imgName: _minty_scotian.default,

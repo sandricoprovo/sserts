@@ -5,7 +5,6 @@ html {
 }
 
 .content__wrapper {
-  border: 2px solid black;
   padding: 0 135px;
 }
 
@@ -22,9 +21,8 @@ html {
 }
 
 .content__desserts {
-  margin-top: 48px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 226px);
+  justify-content: center;
+  gap: 48px;
 }

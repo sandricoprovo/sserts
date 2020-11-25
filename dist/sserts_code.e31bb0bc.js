@@ -30924,9 +30924,7 @@ var HeroBanner = function HeroBanner() {
 
 var _default = HeroBanner;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../assets/logo.svg":"src/assets/logo.svg","../assets/images/header-1.jpg":"src/assets/images/header-1.jpg","../assets/images/header-2.jpg":"src/assets/images/header-2.jpg"}],"src/assets/images/minty_scotian.jpg":[function(require,module,exports) {
-module.exports = "/minty_scotian.c8daa621.jpg";
-},{}],"src/components/DessertCard.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../assets/logo.svg":"src/assets/logo.svg","../assets/images/header-1.jpg":"src/assets/images/header-1.jpg","../assets/images/header-2.jpg":"src/assets/images/header-2.jpg"}],"src/components/DessertCard.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -30934,51 +30932,30 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _react = _interopRequireWildcard(require("react"));
+var _react = _interopRequireDefault(require("react"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var _minty_scotian = _interopRequireDefault(require("../assets/images/minty_scotian.jpg"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
-
-// Component Elements
 var DessertCard = function DessertCard(_ref) {
   var imgName = _ref.imgName,
       name = _ref.name,
       cost = _ref.cost,
       quantity = _ref.quantity;
-  return (
-    /*#__PURE__*/
-    // const [image, setImage] = useState('');
-    // useEffect(() => {
-    //   // dynamically importing each dessert image based on dessert name, and setting that to state to be used by the rendered component
-    //   import(`../assets/images/${imgName.toLowerCase()}.jpg`)
-    //     .then((imageString) => {
-    //       console.log(imageString);
-    //       // Setting imgName string to state
-    //       setImage(imageString);
-    //     })
-    //     .catch((err) => console.log(err));
-    // });
-    _react.default.createElement("div", {
-      className: "dessert__container"
-    }, /*#__PURE__*/_react.default.createElement("img", {
-      className: "dessert__img",
-      src: _minty_scotian.default,
-      alt: ""
-    }), /*#__PURE__*/_react.default.createElement("div", {
-      className: "dessert__info"
-    }, /*#__PURE__*/_react.default.createElement("h1", {
-      className: "header5 dessert__title"
-    }, name), /*#__PURE__*/_react.default.createElement("p", {
-      className: "dessert__cost paragraph"
-    }, "$".concat(cost, " /").concat(quantity))))
-  );
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "dessert__container"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    className: "dessert__img",
+    src: imgName,
+    alt: ""
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    className: "dessert__info"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "header5 dessert__title"
+  }, name), /*#__PURE__*/_react.default.createElement("p", {
+    className: "dessert__cost paragraph"
+  }, "$".concat(cost, " / ").concat(quantity))));
 };
 
 DessertCard.propTypes = {
@@ -30989,35 +30966,22 @@ DessertCard.propTypes = {
 };
 var _default = DessertCard;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","prop-types":"node_modules/prop-types/index.js","../assets/images/minty_scotian.jpg":"src/assets/images/minty_scotian.jpg"}],"src/data/dessertGallery.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.dessertGallery = void 0;
-var dessertGallery = [{
-  imgName: 'minty_scotian',
-  name: 'Minty Scotian',
-  cost: 10,
-  quantity: 'each'
-}, {
-  imgName: 'crane_down_brownie',
-  name: 'Crane Down Brownie',
-  cost: 6,
-  quantity: 'each'
-}, {
-  imgName: 'crane_down_brownie',
-  name: 'Crane Down Brownie',
-  cost: 6,
-  quantity: 'each'
-}, {
-  imgName: 'crane_down_brownie',
-  name: 'Crane Down Brownie',
-  cost: 6,
-  quantity: 'each'
-}];
-exports.dessertGallery = dessertGallery;
+},{"react":"node_modules/react/index.js","prop-types":"node_modules/prop-types/index.js"}],"src/assets/images/minty_scotian.jpg":[function(require,module,exports) {
+module.exports = "/minty_scotian.c8daa621.jpg";
+},{}],"src/assets/images/crane_down_brownie.jpg":[function(require,module,exports) {
+module.exports = "/crane_down_brownie.9c9d50c0.jpg";
+},{}],"src/assets/images/hali_chip.jpg":[function(require,module,exports) {
+module.exports = "/hali_chip.a72767c2.jpg";
+},{}],"src/assets/images/monday_morning.jpg":[function(require,module,exports) {
+module.exports = "/monday_morning.1901e1ab.jpg";
+},{}],"src/assets/images/overboard_icecream.jpg":[function(require,module,exports) {
+module.exports = "/overboard_icecream.13cdded2.jpg";
+},{}],"src/assets/images/fruit_surprise.jpg":[function(require,module,exports) {
+module.exports = "/fruit_surprise.889ee994.jpg";
+},{}],"src/assets/images/berry_good.jpg":[function(require,module,exports) {
+module.exports = "/berry_good.58b5801b.jpg";
+},{}],"src/assets/images/holiday_squad.jpg":[function(require,module,exports) {
+module.exports = "/holiday_squad.610bea46.jpg";
 },{}],"src/pages/Home.js":[function(require,module,exports) {
 "use strict";
 
@@ -31032,22 +30996,27 @@ var _Hero = _interopRequireDefault(require("../components/Hero"));
 
 var _DessertCard = _interopRequireDefault(require("../components/DessertCard"));
 
-var _dessertGallery = require("../data/dessertGallery");
+var _minty_scotian = _interopRequireDefault(require("../assets/images/minty_scotian.jpg"));
+
+var _crane_down_brownie = _interopRequireDefault(require("../assets/images/crane_down_brownie.jpg"));
+
+var _hali_chip = _interopRequireDefault(require("../assets/images/hali_chip.jpg"));
+
+var _monday_morning = _interopRequireDefault(require("../assets/images/monday_morning.jpg"));
+
+var _overboard_icecream = _interopRequireDefault(require("../assets/images/overboard_icecream.jpg"));
+
+var _fruit_surprise = _interopRequireDefault(require("../assets/images/fruit_surprise.jpg"));
+
+var _berry_good = _interopRequireDefault(require("../assets/images/berry_good.jpg"));
+
+var _holiday_squad = _interopRequireDefault(require("../assets/images/holiday_squad.jpg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // Custom Components
+// Dessert images
 var Home = function Home() {
-  var desserts = _dessertGallery.dessertGallery.map(function (dessert, index) {
-    return /*#__PURE__*/_react.default.createElement(_DessertCard.default, {
-      key: index,
-      imgName: dessert.imgName,
-      name: dessert.name,
-      cost: dessert.cost,
-      quantity: dessert.quantity
-    });
-  });
-
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Hero.default, null), /*#__PURE__*/_react.default.createElement("main", {
     className: "content__wrapper"
   }, /*#__PURE__*/_react.default.createElement("section", {
@@ -31058,12 +31027,52 @@ var Home = function Home() {
     className: "paragraph"
   }, "Our eight most popular desserts as of Wednesday, November 18, 2020")), /*#__PURE__*/_react.default.createElement("section", {
     className: "content__desserts"
-  }, desserts)));
+  }, /*#__PURE__*/_react.default.createElement(_DessertCard.default, {
+    imgName: _minty_scotian.default,
+    name: "Minty Scotia",
+    cost: 10,
+    quantity: "each"
+  }), /*#__PURE__*/_react.default.createElement(_DessertCard.default, {
+    imgName: _crane_down_brownie.default,
+    name: "Crane Down Brownie",
+    cost: 6,
+    quantity: "each"
+  }), /*#__PURE__*/_react.default.createElement(_DessertCard.default, {
+    imgName: _hali_chip.default,
+    name: "The Hali Chip",
+    cost: 3,
+    quantity: "each"
+  }), /*#__PURE__*/_react.default.createElement(_DessertCard.default, {
+    imgName: _monday_morning.default,
+    name: "Monday Morning",
+    cost: 5,
+    quantity: "each"
+  }), /*#__PURE__*/_react.default.createElement(_DessertCard.default, {
+    imgName: _overboard_icecream.default,
+    name: "Overboard Ice Cream",
+    cost: 2,
+    quantity: "scoop"
+  }), /*#__PURE__*/_react.default.createElement(_DessertCard.default, {
+    imgName: _fruit_surprise.default,
+    name: "Fruit Surprise",
+    cost: 2,
+    quantity: "slice"
+  }), /*#__PURE__*/_react.default.createElement(_DessertCard.default, {
+    imgName: _berry_good.default,
+    name: "Berry Good",
+    cost: 6,
+    quantity: "each"
+  }), /*#__PURE__*/_react.default.createElement(_DessertCard.default, {
+    imgName: _holiday_squad.default,
+    name: "Holiday Squad",
+    cost: 2,
+    quantity: "each assorted"
+  }))));
 };
 
 var _default = Home;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../components/Hero":"src/components/Hero.js","../components/DessertCard":"src/components/DessertCard.js","../data/dessertGallery":"src/data/dessertGallery.js"}],"src/App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../components/Hero":"src/components/Hero.js","../components/DessertCard":"src/components/DessertCard.js","../assets/images/minty_scotian.jpg":"src/assets/images/minty_scotian.jpg","../assets/images/crane_down_brownie.jpg":"src/assets/images/crane_down_brownie.jpg","../assets/images/hali_chip.jpg":"src/assets/images/hali_chip.jpg","../assets/images/monday_morning.jpg":"src/assets/images/monday_morning.jpg","../assets/images/overboard_icecream.jpg":"src/assets/images/overboard_icecream.jpg","../assets/images/fruit_surprise.jpg":"src/assets/images/fruit_surprise.jpg","../assets/images/berry_good.jpg":"src/assets/images/berry_good.jpg","../assets/images/holiday_squad.jpg":"src/assets/images/holiday_squad.jpg"}],"src/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -31131,7 +31140,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49286" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52848" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

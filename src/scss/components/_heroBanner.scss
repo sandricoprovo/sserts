@@ -1,11 +1,11 @@
 .hero__container {
   border-top: 5px solid black;
   border-bottom: 5px solid black;
+  background-image: $brand-gradient-40;
+  background-repeat: no-repeat;
   width: 100vw;
   display: flex;
   flex-wrap: wrap;
-  background-image: $brand-gradient-40;
-  background-repeat: no-repeat;
 }
 
 .hero__copy {

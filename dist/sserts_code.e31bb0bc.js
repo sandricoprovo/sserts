@@ -30924,7 +30924,101 @@ var HeroBanner = function HeroBanner() {
 
 var _default = HeroBanner;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../assets/logo.svg":"src/assets/logo.svg","../assets/images/header-1.jpg":"src/assets/images/header-1.jpg","../assets/images/header-2.jpg":"src/assets/images/header-2.jpg"}],"src/pages/Home.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../assets/logo.svg":"src/assets/logo.svg","../assets/images/header-1.jpg":"src/assets/images/header-1.jpg","../assets/images/header-2.jpg":"src/assets/images/header-2.jpg"}],"src/assets/images/minty_scotian.jpg":[function(require,module,exports) {
+module.exports = "/minty_scotian.c8daa621.jpg";
+},{}],"src/components/DessertCard.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _propTypes = _interopRequireDefault(require("prop-types"));
+
+var _minty_scotian = _interopRequireDefault(require("../assets/images/minty_scotian.jpg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+// Component Elements
+var DessertCard = function DessertCard(_ref) {
+  var imgName = _ref.imgName,
+      name = _ref.name,
+      cost = _ref.cost,
+      quantity = _ref.quantity;
+  return (
+    /*#__PURE__*/
+    // const [image, setImage] = useState('');
+    // useEffect(() => {
+    //   // dynamically importing each dessert image based on dessert name, and setting that to state to be used by the rendered component
+    //   import(`../assets/images/${imgName.toLowerCase()}.jpg`)
+    //     .then((imageString) => {
+    //       console.log(imageString);
+    //       // Setting imgName string to state
+    //       setImage(imageString);
+    //     })
+    //     .catch((err) => console.log(err));
+    // });
+    _react.default.createElement("div", {
+      className: "dessert__container"
+    }, /*#__PURE__*/_react.default.createElement("img", {
+      className: "dessert__img",
+      src: _minty_scotian.default,
+      alt: ""
+    }), /*#__PURE__*/_react.default.createElement("div", {
+      className: "dessert__info"
+    }, /*#__PURE__*/_react.default.createElement("h1", {
+      className: "header5 dessert__title"
+    }, name), /*#__PURE__*/_react.default.createElement("p", {
+      className: "dessert__cost paragraph"
+    }, "$".concat(cost, " /").concat(quantity))))
+  );
+};
+
+DessertCard.propTypes = {
+  imgName: _propTypes.default.string,
+  name: _propTypes.default.string,
+  cost: _propTypes.default.number,
+  quantity: _propTypes.default.string
+};
+var _default = DessertCard;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","prop-types":"node_modules/prop-types/index.js","../assets/images/minty_scotian.jpg":"src/assets/images/minty_scotian.jpg"}],"src/data/dessertGallery.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.dessertGallery = void 0;
+var dessertGallery = [{
+  imgName: 'minty_scotian',
+  name: 'Minty Scotian',
+  cost: 10,
+  quantity: 'each'
+}, {
+  imgName: 'crane_down_brownie',
+  name: 'Crane Down Brownie',
+  cost: 6,
+  quantity: 'each'
+}, {
+  imgName: 'crane_down_brownie',
+  name: 'Crane Down Brownie',
+  cost: 6,
+  quantity: 'each'
+}, {
+  imgName: 'crane_down_brownie',
+  name: 'Crane Down Brownie',
+  cost: 6,
+  quantity: 'each'
+}];
+exports.dessertGallery = dessertGallery;
+},{}],"src/pages/Home.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -30936,18 +31030,40 @@ var _react = _interopRequireDefault(require("react"));
 
 var _Hero = _interopRequireDefault(require("../components/Hero"));
 
+var _DessertCard = _interopRequireDefault(require("../components/DessertCard"));
+
+var _dessertGallery = require("../data/dessertGallery");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // Custom Components
 var Home = function Home() {
+  var desserts = _dessertGallery.dessertGallery.map(function (dessert, index) {
+    return /*#__PURE__*/_react.default.createElement(_DessertCard.default, {
+      key: index,
+      imgName: dessert.imgName,
+      name: dessert.name,
+      cost: dessert.cost,
+      quantity: dessert.quantity
+    });
+  });
+
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Hero.default, null), /*#__PURE__*/_react.default.createElement("main", {
     className: "content__wrapper"
-  }));
+  }, /*#__PURE__*/_react.default.createElement("section", {
+    className: "content__header"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "header2"
+  }, "The Gallery"), /*#__PURE__*/_react.default.createElement("p", {
+    className: "paragraph"
+  }, "Our eight most popular desserts as of Wednesday, November 18, 2020")), /*#__PURE__*/_react.default.createElement("section", {
+    className: "content__desserts"
+  }, desserts)));
 };
 
 var _default = Home;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../components/Hero":"src/components/Hero.js"}],"src/App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../components/Hero":"src/components/Hero.js","../components/DessertCard":"src/components/DessertCard.js","../data/dessertGallery":"src/data/dessertGallery.js"}],"src/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -31015,7 +31131,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55303" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49286" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

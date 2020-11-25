@@ -19,6 +19,7 @@
   );
   --black: #252323;
   --white: #ffffff;
+  --card-shadow: 8px 16px 40px 0 rgba(148, 148, 148, 0.5);
 }
 
 // Brand Color Variables
@@ -30,3 +31,4 @@ $brand-3: var(--brand-color-3);
 $brand-4: var(--brand-color-4);
 $brand-gradient: var(--brand-gradient);
 $brand-gradient-40: var(--brand-gradient-40);
+$dessert-shadow: var(--card-shadow);

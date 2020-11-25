@@ -7,10 +7,12 @@
 
 // layout
 @import "./layout/header";
+@import "./layout/footer";
 
 // components
 @import "./components/heroBanner";
 @import "./components/dessertCard";
+@import "./components/cta";
 
 // pages
 @import "./pages/home";

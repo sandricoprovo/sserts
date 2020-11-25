@@ -30966,7 +30966,31 @@ DessertCard.propTypes = {
 };
 var _default = DessertCard;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","prop-types":"node_modules/prop-types/index.js"}],"src/assets/images/minty_scotian.jpg":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","prop-types":"node_modules/prop-types/index.js"}],"src/components/CTA.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var CTA = function CTA() {
+  return /*#__PURE__*/_react.default.createElement("section", {
+    className: "cta__container"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "header4 cta__header"
+  }, "Can\u2019t come into the store?"), /*#__PURE__*/_react.default.createElement("p", {
+    className: "paragraph"
+  }, "Find us on UberEats & Skip The Dishes for delivery!"));
+};
+
+var _default = CTA;
+exports.default = _default;
+},{"react":"node_modules/react/index.js"}],"src/assets/images/minty_scotian.jpg":[function(require,module,exports) {
 module.exports = "/minty_scotian.c8daa621.jpg";
 },{}],"src/assets/images/crane_down_brownie.jpg":[function(require,module,exports) {
 module.exports = "/crane_down_brownie.9c9d50c0.jpg";
@@ -30995,6 +31019,8 @@ var _react = _interopRequireDefault(require("react"));
 var _Hero = _interopRequireDefault(require("../components/Hero"));
 
 var _DessertCard = _interopRequireDefault(require("../components/DessertCard"));
+
+var _CTA = _interopRequireDefault(require("../components/CTA"));
 
 var _minty_scotian = _interopRequireDefault(require("../assets/images/minty_scotian.jpg"));
 
@@ -31067,12 +31093,49 @@ var Home = function Home() {
     name: "Holiday Squad",
     cost: 2,
     quantity: "each assorted"
-  }))));
+  })), /*#__PURE__*/_react.default.createElement(_CTA.default, null)));
 };
 
 var _default = Home;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../components/Hero":"src/components/Hero.js","../components/DessertCard":"src/components/DessertCard.js","../assets/images/minty_scotian.jpg":"src/assets/images/minty_scotian.jpg","../assets/images/crane_down_brownie.jpg":"src/assets/images/crane_down_brownie.jpg","../assets/images/hali_chip.jpg":"src/assets/images/hali_chip.jpg","../assets/images/monday_morning.jpg":"src/assets/images/monday_morning.jpg","../assets/images/overboard_icecream.jpg":"src/assets/images/overboard_icecream.jpg","../assets/images/fruit_surprise.jpg":"src/assets/images/fruit_surprise.jpg","../assets/images/berry_good.jpg":"src/assets/images/berry_good.jpg","../assets/images/holiday_squad.jpg":"src/assets/images/holiday_squad.jpg"}],"src/App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../components/Hero":"src/components/Hero.js","../components/DessertCard":"src/components/DessertCard.js","../components/CTA":"src/components/CTA.js","../assets/images/minty_scotian.jpg":"src/assets/images/minty_scotian.jpg","../assets/images/crane_down_brownie.jpg":"src/assets/images/crane_down_brownie.jpg","../assets/images/hali_chip.jpg":"src/assets/images/hali_chip.jpg","../assets/images/monday_morning.jpg":"src/assets/images/monday_morning.jpg","../assets/images/overboard_icecream.jpg":"src/assets/images/overboard_icecream.jpg","../assets/images/fruit_surprise.jpg":"src/assets/images/fruit_surprise.jpg","../assets/images/berry_good.jpg":"src/assets/images/berry_good.jpg","../assets/images/holiday_squad.jpg":"src/assets/images/holiday_squad.jpg"}],"src/assets/footer_path.svg":[function(require,module,exports) {
+module.exports = "/footer_path.e793655b.svg";
+},{}],"src/components/Footer/Footer.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _footer_path = _interopRequireDefault(require("../../assets/footer_path.svg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Footer = function Footer() {
+  return /*#__PURE__*/_react.default.createElement("footer", {
+    className: "footer__container"
+  }, /*#__PURE__*/_react.default.createElement("h1", {
+    className: "header2"
+  }, "Come Out & Enjoy"), /*#__PURE__*/_react.default.createElement("p", {
+    className: "paragraph footer__copy"
+  }, "1500 Young Street"), /*#__PURE__*/_react.default.createElement("p", {
+    className: "paragraph footer__copy"
+  }, "Halifax, Nova Scotia"), /*#__PURE__*/_react.default.createElement("p", {
+    className: "paragraph footer__copy"
+  }, "902-111-1111"), /*#__PURE__*/_react.default.createElement("h2", {
+    className: "paragraph footer__hours"
+  }, "Open Monday to Saturday from 8am 7pm"), /*#__PURE__*/_react.default.createElement("img", {
+    src: _footer_path.default,
+    alt: ""
+  }));
+};
+
+var _default = Footer;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","../../assets/footer_path.svg":"src/assets/footer_path.svg"}],"src/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -31090,16 +31153,18 @@ var _Header = _interopRequireDefault(require("./components/Header/Header"));
 
 var _Home = _interopRequireDefault(require("./pages/Home"));
 
+var _Footer = _interopRequireDefault(require("./components/Footer/Footer"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // Imported ComponentsComponents
 var App = function App() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Header.default, null), /*#__PURE__*/_react.default.createElement(_Layout.default, null, /*#__PURE__*/_react.default.createElement(_Home.default, null)));
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Header.default, null), /*#__PURE__*/_react.default.createElement(_Layout.default, null, /*#__PURE__*/_react.default.createElement(_Home.default, null)), /*#__PURE__*/_react.default.createElement(_Footer.default, null));
 };
 
 var _default = App;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./scss/main.scss":"src/scss/main.scss","./components/Layout":"src/components/Layout.js","./components/Header/Header":"src/components/Header/Header.js","./pages/Home":"src/pages/Home.js"}],"index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./scss/main.scss":"src/scss/main.scss","./components/Layout":"src/components/Layout.js","./components/Header/Header":"src/components/Header/Header.js","./pages/Home":"src/pages/Home.js","./components/Footer/Footer":"src/components/Footer/Footer.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));

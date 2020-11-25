@@ -5,6 +5,7 @@ import './scss/main.scss';
 import Layout from './components/Layout';
 import Header from './components/Header/Header';
 import Home from './pages/Home';
+import Footer from './components/Footer/Footer';
 
 const App = () => (
   <>
@@ -12,6 +13,7 @@ const App = () => (
     <Layout>
       <Home />
     </Layout>
+    <Footer />
   </>
 );
 

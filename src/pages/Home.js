@@ -3,6 +3,7 @@ import React from 'react';
 // Custom Components
 import HeroBanner from '../components/Hero';
 import DessertCard from '../components/DessertCard';
+import CTA from '../components/CTA';
 
 // Dessert images
 import mintyScotian from '../assets/images/minty_scotian.jpg';
@@ -72,6 +73,7 @@ const Home = () => (
           quantity="each assorted"
         />
       </section>
+      <CTA />
     </main>
   </>
 );

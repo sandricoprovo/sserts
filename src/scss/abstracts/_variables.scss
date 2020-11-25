@@ -10,6 +10,13 @@
     rgba(251, 86, 7, 0.08) 57%,
     rgba(58, 134, 255, 0.08) 93%
   );
+  --brand-gradient-40: linear-gradient(
+    120deg,
+    rgba(255, 190, 11, 0.4) 1%,
+    rgba(255, 0, 110, 0.4) 29%,
+    rgba(251, 86, 7, 0.4) 57%,
+    rgba(58, 134, 255, 0.4) 93%
+  );
   --black: #252323;
   --white: #ffffff;
 }
@@ -22,3 +29,4 @@ $brand-2: var(--brand-color-2);
 $brand-3: var(--brand-color-3);
 $brand-4: var(--brand-color-4);
 $brand-gradient: var(--brand-gradient);
+$brand-gradient-40: var(--brand-gradient-40);

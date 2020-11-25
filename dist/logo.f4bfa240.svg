@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="266px" height="127px" viewBox="0 0 266 127" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Group 3 Copy 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="4.40394805%" y1="45.4317385%" x2="84.1750938%" y2="56.1693539%" id="linearGradient-1">
+            <stop stop-color="#FFBE0B" stop-opacity="0.4" offset="0%"></stop>
+            <stop stop-color="#FF006E" stop-opacity="0.4" offset="30.444006%"></stop>
+            <stop stop-color="#FB5607" stop-opacity="0.4" offset="61.4027693%"></stop>
+            <stop stop-color="#3A86FF" stop-opacity="0.4" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage" transform="translate(-31.000000, -157.000000)">
+            <g id="banner-copy" transform="translate(-20.000000, 135.000000)">
+                <g id="Banner-Text" transform="translate(51.000000, 22.000000)">
+                    <g id="Group-3-Copy-4">
+                        <path d="M103.379528,2.50988722 C71.0280391,2.47570596 40.7663441,18.4908245 22.5998427,45.2601767 L3.10460446,73.9874973 L14.2841905,87.9471627 C32.7878865,111.052258 60.7861464,124.5 90.3873662,124.5 L166.871782,124.5 L167.499319,124.497993 C191.598619,124.344831 213.60694,115.455563 230.532558,100.850638 C246.770812,86.8388334 258.332439,67.5671924 262.579851,45.7022229 C260.17763,46.209878 257.688975,46.4781431 255.139202,46.4781431 C245.069966,46.4781431 235.951009,42.2989903 229.351313,35.5331669 C222.773831,28.7901177 218.700497,19.4760694 218.700497,9.18513601 C218.700497,7.05504345 218.875183,4.96676232 219.211063,2.93469256 C192.16488,2.70445194 153.552761,2.56289819 103.379528,2.50988722 Z" id="Background" stroke="url(#linearGradient-1)" stroke-width="5" fill="#FFFFFF"></path>
+                        <g id="Text" transform="translate(52.000000, 11.000000)" font-weight="normal">
+                            <text id="Gormet-Desserts" font-family="Montserrat-Regular, Montserrat" font-size="16" fill="#000000">
+                                <tspan x="13.392" y="84">Gormet Desserts</tspan>
+                            </text>
+                            <text id="Sserts" font-family="Pacifico-Regular, Pacifico" font-size="45.23" fill="#FFBE0B">
+                                <tspan x="17.791075" y="59">Sserts</tspan>
+                            </text>
+                        </g>
+                        <g id="Crums" transform="translate(231.000000, 4.000000)" fill="#FFBE0B">
+                            <polygon id="Rectangle" transform="translate(3.632634, 3.179487) rotate(25.000000) translate(-3.632634, -3.179487) " points="1.25721536 0.790583347 5.99198205 0.806654209 6.00805291 5.56839101 1.27328622 5.55232015"></polygon>
+                            <polygon id="Rectangle-Copy-3" transform="translate(1.969697, 13.360214) rotate(25.000000) translate(-1.969697, -13.360214) " points="0.781987581 12.1657622 3.14937093 12.1737976 3.15740636 14.554666 0.790023012 14.5466306"></polygon>
+                            <polygon id="Rectangle-Copy-4" transform="translate(8.398166, 22.962295) rotate(25.000000) translate(-8.398166, -22.962295) " points="5.23094071 19.7770894 11.543963 19.7985172 11.5653908 26.1474996 5.25236853 26.1260718"></polygon>
+                            <polygon id="Rectangle-Copy-5" transform="translate(23.345323, 28.240044) rotate(25.000000) translate(-23.345323, -28.240044) " points="21.7617108 26.6474417 24.9182219 26.6581556 24.9289358 29.8326468 21.7724247 29.8219329"></polygon>
+                            <polygon id="Rectangle-Copy-6" transform="translate(19.819291, 15.179663) rotate(25.000000) translate(-19.819291, -15.179663) " points="18.2356788 13.5870605 21.3921899 13.5977744 21.4029039 16.7722656 18.2463927 16.7615517"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

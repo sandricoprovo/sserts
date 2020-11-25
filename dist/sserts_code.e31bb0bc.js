@@ -30875,7 +30875,13 @@ var Header = function Header() {
 
 var _default = Header;
 exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"src/pages/Home.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js"}],"src/assets/logo.svg":[function(require,module,exports) {
+module.exports = "/logo.f4bfa240.svg";
+},{}],"src/assets/images/header-1.jpg":[function(require,module,exports) {
+module.exports = "/header-1.4818329e.jpg";
+},{}],"src/assets/images/header-2.jpg":[function(require,module,exports) {
+module.exports = "/header-2.6d1e580c.jpg";
+},{}],"src/components/Hero.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -30885,16 +30891,63 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
+var _logo = _interopRequireDefault(require("../assets/logo.svg"));
+
+var _header = _interopRequireDefault(require("../assets/images/header-1.jpg"));
+
+var _header2 = _interopRequireDefault(require("../assets/images/header-2.jpg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// Image imports
+var HeroBanner = function HeroBanner() {
+  return /*#__PURE__*/_react.default.createElement("section", {
+    className: "hero__container"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "hero__copy"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    className: "hero__logo",
+    src: _logo.default,
+    alt: ""
+  }), /*#__PURE__*/_react.default.createElement("p", null, "Your Haligonian stop for healthy and hip desserts!"), /*#__PURE__*/_react.default.createElement("p", null, "Todays Specials: ", /*#__PURE__*/_react.default.createElement("br", null), /*#__PURE__*/_react.default.createElement("span", {
+    className: "paragraph__small"
+  }, "Raspberry & Blueberry Ice Cream ", /*#__PURE__*/_react.default.createElement("br", null), "Bacon Flavoured Cupcakes ", /*#__PURE__*/_react.default.createElement("br", null)))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "hero__images"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: _header.default,
+    alt: "A fruit dessert with blueberries and strawberries in a cup."
+  }), /*#__PURE__*/_react.default.createElement("img", {
+    src: _header2.default,
+    alt: "Cupcakes with pigs on top."
+  })));
+};
+
+var _default = HeroBanner;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","../assets/logo.svg":"src/assets/logo.svg","../assets/images/header-1.jpg":"src/assets/images/header-1.jpg","../assets/images/header-2.jpg":"src/assets/images/header-2.jpg"}],"src/pages/Home.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _Hero = _interopRequireDefault(require("../components/Hero"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // Custom Components
 var Home = function Home() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("main", null, /*#__PURE__*/_react.default.createElement("h1", null, "Hello World from Sserts!")));
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_Hero.default, null), /*#__PURE__*/_react.default.createElement("main", {
+    className: "content__wrapper"
+  }));
 };
 
 var _default = Home;
 exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"src/App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../components/Hero":"src/components/Hero.js"}],"src/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -30962,7 +31015,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63355" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55303" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

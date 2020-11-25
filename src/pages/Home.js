@@ -1,11 +1,12 @@
 import React from 'react';
 
 // Custom Components
+import HeroBanner from '../components/Hero';
 
 const Home = () => (
   <>
-    <main>
-      <h1>Hello World from Sserts!</h1>
+    <HeroBanner />
+    <main className="content__wrapper">
     </main>
   </>
 );

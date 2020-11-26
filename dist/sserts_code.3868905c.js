@@ -37,7 +37,7 @@ module.exports="/header-2.d80529a1.jpg";
 },{"react":"HdMw","prop-types":"Iix9"}],"bJ1h":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var e=t(require("react"));function t(e){return e&&e.__esModule?e:{default:e}}var a=function(){return e.default.createElement("section",{className:"cta__container"},e.default.createElement("h1",{className:"header4 cta__header"},"Can’t come into the store?"),e.default.createElement("p",{className:"paragraph"},"Find us on UberEats & Skip The Dishes for delivery!"))},r=a;exports.default=r;
 },{"react":"HdMw"}],"SDYb":[function(require,module,exports) {
-module.exports="/minty_scotian.f13e7bdf.jpg";
+module.exports="/minty_scotian.c125764a.jpg";
 },{}],"mfec":[function(require,module,exports) {
 module.exports="/crane_down_brownie.337be0ec.jpg";
 },{}],"XO0C":[function(require,module,exports) {
@@ -63,4 +63,4 @@ module.exports="/footer_path.8eb96890.svg";
 },{"react":"HdMw","./scss/main.scss":"D3vG","./components/Layout":"fwx2","./components/Header/Header":"Nk4S","./pages/Home":"Mi3g","./components/Footer/Footer":"six0"}],"Focm":[function(require,module,exports) {
 "use strict";var e=u(require("react")),r=u(require("react-dom")),t=u(require("./src/App"));function u(e){return e&&e.__esModule?e:{default:e}}r.default.render(e.default.createElement(t.default,null),document.getElementById("root"));
 },{"react":"HdMw","react-dom":"X9zx","./src/App":"FLHj"}]},{},["Focm"], null)
-//# sourceMappingURL=/sserts_code.5a4e5956.js.map
+//# sourceMappingURL=/sserts_code.3868905c.js.map

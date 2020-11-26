@@ -435,10 +435,14 @@ template {
 .nav__link {
   list-style: none;
   margin: 0 16px;
+  transition: border-bottom 0.1s ease-in-out;
+  border-bottom: 2px solid;
+  border-image-source: var(--brand-gradient-40);
+  border-image-slice: 1;
 }
 
-.nav__link {
-  border-bottom: 2px solid;
+.nav__link:hover {
+  border-bottom: 14px solid;
   border-image-source: var(--brand-gradient-40);
   border-image-slice: 1;
 }

@@ -1,0 +1,70 @@
+.catering-card__container {
+  width: 100%;
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.catering-card__img {
+  width: 100%;
+  min-width: 350px;
+  max-width: 550px;
+  height: 80%;
+  max-height: 600px;
+}
+
+.catering-card__info {
+  width: 100%;
+  min-width: 350px;
+  max-width: 500px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: $white;
+  border: 5px solid;
+  border-image-source: $brand-gradient-40;
+  border-image-slice: 1;
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.catering-card__info:hover {
+  box-shadow: $dessert-shadow;
+  transform: scale(1.2);
+}
+
+.catering-card__info > p {
+  text-align: center;
+  padding: 2px 24px;
+}
+
+.catering-card__title {
+  position: relative;
+  z-index: 100;
+}
+
+.catering-card__title span {
+  position: relative;
+  z-index: -1;
+}
+
+.catering-card__title::after {
+  content: "";
+  position: absolute;
+  left: -0.1px;
+  right: -0.1px;
+  bottom: 0;
+  height: 100%;
+  z-index: -1;
+  transform: scaleY(0.3);
+  transition: transform 0.1s ease-in-out;
+  transform-origin: bottom;
+  background-image: $brand-gradient-40;
+}
+
+.catering-card__title:hover::after {
+  transform: scaleY(1);
+}

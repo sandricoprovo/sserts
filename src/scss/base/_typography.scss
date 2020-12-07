@@ -7,6 +7,7 @@ $header4: 31.99px;
 $header5: 22.62px;
 $header6: 16px;
 $paragraph: 16px;
+$paragraph-medium: 14px;
 $small-paragraph: 11.32px;
 $overline: 8px;
 
@@ -42,6 +43,11 @@ $overline: 8px;
 
 .paragraph {
   font-size: $paragraph;
+  font-family: "Montserrat";
+}
+
+.paragraph__medium {
+  font-size: $paragraph-medium;
   font-family: "Montserrat";
 }
 

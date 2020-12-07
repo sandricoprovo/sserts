@@ -6,7 +6,7 @@ const Layout = ({ children }) => (
 );
 
 Layout.propTypes = {
-  children: PropTypes.object,
+  children: PropTypes.any,
 };
 
 export default Layout;

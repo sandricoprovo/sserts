@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const DessertCard = ({ imgName, name, cost, quantity }) => (
+const DessertCard = ({ imgName, imgAlt, name, cost, quantity }) => (
   <div className="dessert__container">
-    <img className="dessert__img" src={imgName} alt="" />
+    <img className="dessert__img" src={imgName} alt={imgAlt} />
     <div className="dessert__info">
       <h1 className="header5 dessert__title">
         {name} <span />
@@ -14,6 +14,7 @@ const DessertCard = ({ imgName, name, cost, quantity }) => (
 );
 DessertCard.propTypes = {
   imgName: PropTypes.string,
+  imgAlt: PropTypes.string,
   name: PropTypes.string,
   cost: PropTypes.number,
   quantity: PropTypes.string,

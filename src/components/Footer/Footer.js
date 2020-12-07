@@ -11,7 +11,10 @@ const Footer = () => (
     <h2 className="paragraph footer__hours">
       Open Monday to Saturday from 8am 7pm
     </h2>
-    <img src={footerDecal} alt="" />
+    <img
+      src={footerDecal}
+      alt="A coloured string wrapping across the footer."
+    />
   </footer>
 );
 

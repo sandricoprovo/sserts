@@ -1,17 +1,26 @@
 import React from 'react';
+import { Link, withRouter } from 'react-router-dom';
 
 const Header = () => (
   <header className="header">
     <nav className="header__navbar">
       <ul className="nav__links">
-        <li className="nav__link header5">Takeout</li>
-        <li className="nav__link header5">Regulars</li>
-        <li className="nav__link header5">Home</li>
-        <li className="nav__link header5">Specialties</li>
-        <li className="nav__link header5">Catering</li>
+        <li className="nav__link header5">
+          <Link to="/" style={{ color: 'black', textDecoration: 'none' }}>
+            Home
+          </Link>
+        </li>
+        <li className="nav__link header5">
+          <Link
+            to="/catering"
+            style={{ color: 'black', textDecoration: 'none' }}
+          >
+            Catering
+          </Link>
+        </li>
       </ul>
     </nav>
   </header>
 );
 
-export default Header;
+export default withRouter(Header);

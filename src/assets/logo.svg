@@ -18,11 +18,11 @@
                     <g id="Group-3-Copy-4">
                         <path d="M103.379528,2.50988722 C71.0280391,2.47570596 40.7663441,18.4908245 22.5998427,45.2601767 L3.10460446,73.9874973 L14.2841905,87.9471627 C32.7878865,111.052258 60.7861464,124.5 90.3873662,124.5 L166.871782,124.5 L167.499319,124.497993 C191.598619,124.344831 213.60694,115.455563 230.532558,100.850638 C246.770812,86.8388334 258.332439,67.5671924 262.579851,45.7022229 C260.17763,46.209878 257.688975,46.4781431 255.139202,46.4781431 C245.069966,46.4781431 235.951009,42.2989903 229.351313,35.5331669 C222.773831,28.7901177 218.700497,19.4760694 218.700497,9.18513601 C218.700497,7.05504345 218.875183,4.96676232 219.211063,2.93469256 C192.16488,2.70445194 153.552761,2.56289819 103.379528,2.50988722 Z" id="Background" stroke="url(#linearGradient-1)" stroke-width="5" fill="#FFFFFF"></path>
                         <g id="Text" transform="translate(52.000000, 11.000000)" font-weight="normal">
-                            <text id="Gormet-Desserts" font-family="Montserrat-Regular, Montserrat" font-size="16" fill="#000000">
-                                <tspan x="13.392" y="84">Gormet Desserts</tspan>
-                            </text>
                             <text id="Sserts" font-family="Pacifico-Regular, Pacifico" font-size="45.23" fill="#FFBE0B">
                                 <tspan x="17.791075" y="59">Sserts</tspan>
+                            </text>
+                            <text id="Gourmet-Desserts" font-family="Montserrat-Regular, Montserrat" font-size="16" fill="#000000">
+                                <tspan x="8.008" y="84">Gourmet Desserts</tspan>
                             </text>
                         </g>
                         <g id="Crums" transform="translate(231.000000, 4.000000)" fill="#FFBE0B">

@@ -1,0 +1,68 @@
+.daily-dessert__container {
+  width: 100%;
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.daily-dessert__img {
+  width: 100%;
+  min-width: 350px;
+  max-width: 300px;
+  height: 80%;
+}
+
+.daily-dessert__info {
+  width: 100%;
+  min-width: 350px;
+  max-width: 500px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: $white;
+  border: 5px solid;
+  border-image-source: $brand-gradient-40;
+  border-image-slice: 1;
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.daily-dessert__info:hover {
+  box-shadow: $dessert-shadow;
+  transform: scale(1.2);
+}
+
+.daily-dessert__info > p {
+  padding: 8px 24px;
+}
+
+.daily-dessert__title {
+  position: relative;
+  z-index: 100;
+}
+
+.daily-dessert__title span {
+  position: relative;
+  z-index: -1;
+}
+
+.daily-dessert__title::after {
+  content: "";
+  position: absolute;
+  left: -0.1px;
+  right: -0.1px;
+  bottom: 0;
+  height: 100%;
+  z-index: -1;
+  transform: scaleY(0.3);
+  transition: transform 0.1s ease-in-out;
+  transform-origin: bottom;
+  background-image: $brand-gradient-40;
+}
+
+.daily-dessert__title:hover::after {
+  transform: scaleY(1);
+}

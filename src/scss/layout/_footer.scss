@@ -29,9 +29,8 @@
 }
 
 .footer__container img {
-  // position: relative;
-  // top: 90%;
   position: absolute;
   bottom: 104px;
-  // z-index: -1;
+  width: 100%;
+  max-width: 1440px;
 }

@@ -9,10 +9,12 @@ const HeroBanner = () => (
   <section className="hero__container">
     <div className="hero__copy">
       <img className="hero__logo" src={Logo} alt="" />
-      <p>Your Haligonian stop for healthy and hip desserts!</p>
+      <p className="header5">
+        Your Haligonian stop for healthy and hip desserts!
+      </p>
       <p>
         Todays Specials: <br />
-        <span className="paragraph__small">
+        <span className="paragraph__medium">
           Raspberry & Blueberry Ice Cream <br />
           Bacon Flavoured Cupcakes <br />
         </span>
